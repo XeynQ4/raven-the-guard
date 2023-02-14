@@ -1,0 +1,14 @@
+{
+  "name": "crow-mod-bot",
+  "version": "0.0.1",
+  "description": "Moderator bot for crow's discord server",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xeyn",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}
