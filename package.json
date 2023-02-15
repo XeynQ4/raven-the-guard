@@ -4,7 +4,8 @@
   "description": "Moderator bot for crow's discord server",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "deploy-commands": "node src/deploy-commands.js"
   },
   "author": "Xeyn",
   "license": "MIT",
