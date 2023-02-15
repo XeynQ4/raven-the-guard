@@ -6,6 +6,7 @@ module.exports = (client) => {
   client.handleCommands = async () => {
     const { commands, commandArray } = client;
 
+    // Goes through all the folders in ./src/commands and registers all the commands in them
     const commandFolders = fs.readdirSync("./src/commands");
     for (const folder of commandFolders) {
       const commandFiles = fs
@@ -25,6 +26,7 @@ module.exports = (client) => {
       }
     }
 
+    // Registers the commands so that discord knows about them
     const rest = new REST({ version: "10" }).setToken(token);
     try {
       console.log(
