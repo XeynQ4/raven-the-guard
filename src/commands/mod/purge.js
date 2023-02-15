@@ -10,7 +10,7 @@ module.exports = {
         .setDescription("Amount of messages to delete")
         .setRequired(true)
     ),
-  async execute(interaction) {
+  async execute(interaction, client) {
     const amount = interaction.options.getInteger("amount");
 
     if (amount <= 0)

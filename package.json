@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node .",
-    "deploy-commands": "node src/deploy-commands.js"
   },
   "author": "Xeyn",
   "license": "MIT",
