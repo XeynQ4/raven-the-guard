@@ -5,7 +5,7 @@ const { Client, Collection, GatewayIntentBits } = require("discord.js");
 require("dotenv").config();
 const { DISCORD_TOKEN: token } = process.env;
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers] });
 
 client.commands = new Collection();
 client.commandArray = [];
