@@ -3,7 +3,6 @@ const { Events, EmbedBuilder } = require("discord.js");
 module.exports = {
   name: Events.GuildMemberRemove,
   async execute(member, client) {
-    console.log;
     const guild = member.guild;
     if (!guild.available) return;
 
