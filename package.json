@@ -4,7 +4,7 @@
   "description": "Moderator bot for crow's discord server",
   "main": "src/index.js",
   "scripts": {
-    "start": "node .",
+    "start": "node ."
   },
   "author": "Xeyn",
   "license": "MIT",
