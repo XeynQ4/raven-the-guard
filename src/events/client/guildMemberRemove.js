@@ -12,7 +12,7 @@ module.exports = {
     const byeEmbed = new EmbedBuilder()
       .setColor("#FF0000")
       .setTitle("Bye")
-      .setDescription(`**${member}** left :cry:`)
+      .setDescription(`**${member.displayName}** left :cry:`)
       .setThumbnail(guild.iconURL());
 
     await channel.send({ embeds: [byeEmbed] }).catch(console.error);

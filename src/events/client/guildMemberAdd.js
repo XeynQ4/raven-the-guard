@@ -12,7 +12,7 @@ module.exports = {
     const welcomeEmbed = new EmbedBuilder()
       .setColor("#00FF00")
       .setTitle("Welcome!")
-      .setDescription(`Hey ${member}, welcome to **${guild}**!`)
+      .setDescription(`Hey **${member.displayName}**, welcome to **${guild}**!`)
       .setThumbnail(guild.iconURL());
 
     await channel.send({ embeds: [welcomeEmbed] }).catch(console.error);
